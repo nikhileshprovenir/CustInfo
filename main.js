@@ -10,7 +10,7 @@ $("#saveclick").live("click", saveGeneralApplicant);
  $("#save").die("click");
  // $("#saveclick").live("click", reqvalidateandsaveGeneralApplicant);
 // $("#saveclick").live("click", validateAndSaveApplicant);
-$("#save").live("click", saveGeneralApplicant);
+$("#save").live("click", validateAndSaveApplicant);
  //CANCEL BUTTONS LOGIC
 
 
@@ -25,19 +25,19 @@ $("#save").live("click", saveGeneralApplicant);
  
 //NAME FORMAT 
  
- $("#name").die('keydown');
- $("#name").live('keydown',NameandSpace);
-/* $("#lnm").die('keydown');
+ $("#fnm").die('keydown');
+ $("#fnm").live('keydown',NameandSpace);
+$("#lnm").die('keydown');
  $("#lnm").live('keydown',NameandSpace);
  $("#mnm").die('keydown');
- $("#mnm").live('keydown',NameLetteronly);
+ $("#mnm").live('keydown',NameandSpace);
  
  
 // $("#dob_").change(isGoodDate);
  
  //$("#dob_").live('change',isGoodDate);
  
- */
+ 
  
  
  
@@ -71,23 +71,14 @@ $("#save").live("click", saveGeneralApplicant);
  	var lastName = $('#lnm').val();
  	var ssn = $('#ssnumber').val();
  	var dob = $('#dob_').val();
- 	var dob_CB = $('#dob_CB').val();
  	var emailadd = $('#email').val();
- 	var mort = $('#mortgage').val();
- 	var stnm = $('#street').val();
- 	var stno = $('#streetNo').val();
- 	var city = $('#city').val();
- 	var zip = $('#zipCd').val();
- 	var tadd = $('#yearsAtAddr').val();
- 	var empnm = $('#employerName').val();
- 	var jobt = $('#jobtitle').val();
- 	var moninc = $('#grossAmnt').val();
- 	var tjob = $('#yearsAtJob').val();
- 	var phno = $('#PhoneNumber').val();
+   	var phnos = $('#phno').val();
  	
  	
- 	if( (!firstName==null || !firstName=="") && (!lastName==null || !lastName=="") && (!ssn==null || !ssn=="") && ((!dob==null || !dob=="") || (!dob_CB==null || !dob_CB=="")) && (!emailadd==null || !emailadd=="") && (!mort==null || !mort=="") && (!stnm==null || !stnm=="") && (!stno==null || !stno=="") && (!city==null || !city=="") && (!zip==null || !zip=="") && (!tadd ==null || !tadd =="") && (!empnm==null || !empnm=="") && (!jobt==null || !jobt=="") && (!moninc==null || !moninc=="") && (!tjob==null || !tjob=="") && (!phno==null || !phno=="")){
- 		//alert("good");
+ 	if( (!firstName==null || !firstName=="") && (!lastName==null || !lastName=="") && (!ssn==null || !ssn=="")&& (!dob==null || !dob=="")&& (!emailadd==null || !emailadd==""&& (!phnos==null || !phnos=="")))
+	
+	{
+ 		alert("Thanks for entering your information, we will get back to you");
  		return true;
  	}
  	else{

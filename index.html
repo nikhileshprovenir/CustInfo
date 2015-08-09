@@ -45,7 +45,7 @@
 <h1 class="art-headline" data-left="15.52%">
     <a href="#">IT SOLUTIONS</a>
 </h1>
-<h2 class="art-slogan" data-left="15.63%">Loan Origination</h2>
+<h2 class="art-slogan" data-left="15.63%">Validations</h2>
 
 <div class="art-object0" data-left="2.62%"></div>
 
@@ -63,16 +63,16 @@
 
 <form>
 <div class="Entry width90per">
-		<label>First Name</label>
-		<input type="text" name="name" id="name" value="" />
+		<label>First Name</label><label style="color: red; width: 1px">*</label>
+		<input type="text" name="name" id="fnm" value="" />
 	</div>
     <div class="Entry width90per">
 		<label>Middle Name</label>
-		<input type="text" name="name" id="name" value="" />
+		<input type="text" name="name" id="mnm" value="" />
 	</div>
       <div class="Entry width90per">
-		<label>Last Name</label>
-		<input type="text" name="name" id="name" value="" />
+		<label>Last Name</label><label style="color: red; width: 1px">*</label>
+		<input type="text" name="name" id="lmn" value="" />
 	</div>
  <div class="SSNContainer Entry width45per">
 		<label>SSN</label><label style="color: red; width: 1px">*</label>
@@ -80,16 +80,16 @@
 	</div>
      <div class="SSNContainer Entry width45per">
 		<label>PhoneNumber</label><label style="color: red; width: 1px">*</label>
-		<input type="text" name="name" class="CUPhoneFormat label_r_only" value="" id="ssnumber"  />
+		<input type="text" name="name" class="CUPhoneFormat label_r_only" value="" id="phno"  />
 	</div>
     <div class="Entry width45per">
-		<label>Date of Birth</label>
+		<label>Date of Birth</label><label style="color: red; width: 1px">*</label>
 		<input type="text" field="dob" id="dob_" /> 
 	</div>
     <script type="text/javascript">
 			$('#dob_').datepicker({dateFormat: 'mm-dd-yy'});
 		</script>
-  Email: <input type="text" name="email" id="email" value="" />
+  Email:<label style="color: red; width: 1px">*</label> <input type="text" name="email" id="email" value="" />
   Address: <textarea name="address" id="address" cols="25" rows="3"></textarea>
         <div class="Entry width45per">
 		<label>Years at Address</label>
