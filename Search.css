@@ -1,0 +1,230 @@
+table.SearchResults .lockedBy.even td {
+	background-color:#FF9999;	
+}
+
+table.SearchResults .lockedBy.hoverSelected.even td {
+	background-color:#FF6666;
+}
+
+table.SearchResults .lockedBy.odd td {
+	background-color:#FFCCCC;	
+}
+
+table.SearchResults .lockedBy.hoverSelected.odd td {
+	background-color:#FFAAAA;
+}
+
+@charset "UTF-8";
+/* CSS Document */
+
+/* Search box method by http://www.sohtanaka.com/web-design/styling-input-search-form-css/ */
+
+#Searches input[type="text"],
+#Searches input[type="select"]{
+	border:1px #333 solid;
+	}
+
+#Searches button.btn {
+	position:absolute;
+	width: 22px;
+	height: 0px;
+	cursor: pointer;
+	text-indent: -9999px;
+	background: #fff url(../img/ico-search.png) no-repeat 3px 3px;
+	border:1px #ba8748 solid;
+	border-radius:5px;
+	margin-left:10px;
+}
+#Searches button.btn:hover {
+	background: #fbc900 url(../img/ico-search.png) no-repeat 3px 3px;
+}
+
+
+.AdvancedSearchFormContainer,.SearchFormContainer{
+	background: #7ea8b7; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdlYThiNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0NTUwNzciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #7ea8b7 0%, #455077 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ea8b7), color-stop(100%,#455077)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7ea8b7 0%,#455077 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7ea8b7 0%,#455077 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7ea8b7 0%,#455077 100%); /* IE10+ */
+	background: linear-gradient(top,  #7ea8b7 0%,#455077 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ea8b7', endColorstr='#455077',GradientType=0 ); /* IE6-8 */
+
+	z-index:3;
+	position:absolute;
+	top:0px;
+	right:0px;
+	display:block;
+	width:510px;
+	height:40px;
+	padding-top: 10px;
+	border-left:1px solid #000000;
+	border-bottom:1px solid #000000;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+	}
+
+fieldset.search {
+	border: none;
+	margin: 0 auto;
+	padding:10px;
+}
+.search select{
+	float:left;
+	font-size:12px;
+	padding:0px;
+	}
+.search input {
+	border: none;
+}
+.search input.box {
+	color: #bc7921;
+	font-size: 12px;
+	width: 190px;
+	height: 15px;
+	padding: 2px;
+	background-color: #FFF;
+	margin-right: 0px;
+	border:1px #ba8748 solid;
+	border-radius:5px;
+}
+.search input.box:focus {
+	background: #FFC url(../../HTML%20v1.8/css/search_bg.gif) no-repeat left -38px;
+	outline: none;
+}
+
+#searchform label,
+#searchform a.Options{
+	color:#ffffff;	
+	font-size:10px;
+	}
+	
+#searchform a.Options{
+	position:absolute;
+	right:0px;
+	bottom:4px;
+	margin-right:10px;
+	}
+#searchform a.Options:hover{
+	color:#FFC;
+	}
+
+
+/*Advanced Search*/	
+.AdvancedSearchFormContainer .Close{
+	background:url(../img/btn-close.png) no-repeat;
+	width:15px;
+	height:15px;
+	/*color:#000;
+	border:1px black solid;*/
+	position:absolute;
+	display:block;
+	padding:2px;
+	top:4px;
+	right:8px;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	}
+.AdvancedSearchFormContainer a.Close:hover{
+	background:url(../img/btn-close-hover.png) no-repeat;
+	}
+.AdvancedSearchFormContainer{
+	height:140px;
+	}
+form#AdvancedSearchForm{
+	font-size:10px;
+	color:#FFF;
+	height:130px;
+	overflow:hidden;
+	}
+.AdvancedSearchFormContainer h3{
+	float:left;
+	display:block;
+	margin:0 0 10px 10px;
+	}
+form#AdvancedSearchForm .HeaderFilters label,
+form#AdvancedSearchForm .HeaderFilters input{
+	float:none;
+	display:inline;
+	margin:0 0 10px 10px;
+	}
+form#AdvancedSearchForm .Column{
+	width:230px;
+	float:left;
+	margin:0 10px 10px 0;
+	}
+form#AdvancedSearchForm br{
+	clear:both;
+	margin-bottom:10px;
+	}	
+form#AdvancedSearchForm input.StdInput{
+	width:140px;
+	float:right;
+	}	
+form#AdvancedSearchForm label{
+	text-align:right;
+	display:block;
+	width:80px;
+	float:left;
+	}
+form#AdvancedSearchForm .LOIChoices{
+	float: right;
+    margin-right: 35px;
+    width: 98px;
+	}
+form#AdvancedSearchForm .LOIChoices label{
+	width:25px;
+	}
+form#AdvancedSearchForm .LOIChoices label,
+form#AdvancedSearchForm .LOIChoices input{
+	float:none;
+	display:inline;
+	}
+form#AdvancedSearchForm .DatePickerContainer {
+	margin-left:20px;
+	}
+form#AdvancedSearchForm .DatePickerContainer label,
+form#AdvancedSearchForm .DatePickerContainer input{
+	float:none;
+	display:inline;
+	font-size:10px;
+	}
+form#AdvancedSearchForm  button{
+	float:right;
+	}
+
+/*** Jquery UI customization ***/
+.ui-datepicker {
+    width: 12em;
+}
+.ui-datepicker .ui-datepicker-title {
+    font-size: 0.6em;
+}
+.ui-datepicker table {
+    font-size: 0.6em;
+}
+.ui-datepicker th {
+    padding: 0.3em;
+	}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    height: 1.3em;
+	}
+
+input#from,input#to{
+	width:60px;
+	}
+	
+.padRight{
+	float:right;
+	position: absolute;
+    right: 10px;
+    top: 117px;
+    
+}
+.txtC{
+text-align: center !important;
+}
+
+a,img {outline:none;border:none;}

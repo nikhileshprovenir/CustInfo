@@ -896,14 +896,17 @@ ul.art-hmenu ul
 
 .art-sheet
 {
-   background: #000000;
-   background: transparent;
-   padding:15px;
-   margin:20px auto 0;
-   position:relative;
-   cursor:auto;
-   width: 900px;
-   z-index: auto !important;
+	background: #000000;
+	background: transparent;
+	padding: 15px;
+	position: relative;
+	cursor: auto;
+	width: 400px;
+	z-index: auto !important;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
 }
 
 .art-layout-wrapper

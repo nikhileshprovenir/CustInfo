@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.ui-tabs .ui-tabs-panel {
+	padding:0;
+}
+.ui-widget {
+	font-size:.8em;
+}
+
+#tabs li .ui-icon-close {
+	float: left;
+	margin: 0.4em 0.2em 0 0;
+	cursor: pointer;
+}
+
+#tabs {
+	margin-top: .3em;
+}
+
+.ui-tabs,
+.ui-tabs .ui-tabs-nav LI{
+	position:relative;
+	top:3px;
+	}
+div#tabs ul.ui-tabs-nav li.ui-state-active a{
+	cursor:pointer;
+	}
+h3{
+	position:static;
+	}
+	
+.ui-tabs .ui-tabs-nav li a {
+    padding: 0.4em 0.8em;
+}	
+
+/*Dialogs*/
+
+.ui-dialog h5{
+	margin:5px 0 10px 0;
+	font-size:14px;
+	clear:both;
+	}
+
+.ui-dialog label{
+	padding-right:10px;
+	display:block;
+	width:100px;
+	float:left;
+	text-align:right;
+	margin-bottom:15px;
+	clear:both;
+	}
+.ui-dialog .Entry label,
+.ui-dialog .Status label{font-size:1em;} 
+
+.ui-dialog .Reversedlabels input{float:left}
+.ui-dialog .Reversedlabels label{
+	float:left;
+	margin-bottom:15px;
+	width:100px;
+	clear:none;
+	text-align:left;
+	padding-left:10px;	
+	}
+
+.ui-dialog textarea{
+	width:95%
+	}
+
+.ui-dialog input[type=checkbox]{
+	float:left;
+	}
+
+/*End Dialogs*/
+
+.Entry.Error label{
+	padding-top:2px;
+	margin:0 5px 0 5px;
+	}
+
+.Entry.Error select,
+.Entry.Error label,
+.Entry.Error input{
+	float:left;
+	}
+
+.tablesorter{
+	 border-collapse: separate;
+	 border-spacing: 1px;
+	 *border-collapse: expression('separate', cellSpacing = '1px');	
+	}
+
+.ProvGrid{
+	overflow:auto!important;
+	}
+

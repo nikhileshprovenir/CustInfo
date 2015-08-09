@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*UI.Checkbox*/
+
+/* 
+ * The state classes are a little bit complex, because of the doubble class bug in IE6
+ * The state class looks like this:
+ * 
+ * .ui-radio-state[-checked][-disabled][-hover] or .ui-checkbox-state[-checked][-disabled][-hover]
+ * 
+ * Examples:
+ * 
+ * .ui-radio-state-checked (simply checked) 
+ * .ui-radio-state-checked-hover (checked and hovered/focused)
+ * .ui-radio-state-hover (unchecked and hovered/focused)
+ * 
+ */
+
+.ui-radio-state-disabled,
+.ui-radio-state-checked-disabled,
+.ui-radio-state-disabled-hover,
+.ui-radio-state-checked-disabled-hover {
+	color: #999;
+}
+span.ui-checkbox,
+span.ui-radio {
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	/*background: url(../img/icon_checkbox.png) 0 -40px no-repeat;*/
+}
+span.ui-helper-hidden {
+	display: none;
+}
+label {
+	padding: 2px;
+	
+}
+span.ui-radio-state-hover,
+span.ui-checkbox-state-hover {
+	background-position: 0 -114px;
+}
+
+span.ui-checkbox-state-checked {
+	background-position: 0 -1px;
+}
+
+span.ui-checkbox-state-checked-hover {
+	background-position: 0 -75px;
+}
+span.ui-radio-state-checked-disabled-hover,
+span.ui-radio-state-checked-disabled,
+span.ui-radio-state-checked {
+	background-position: 0 -161px;
+}
+
+
+span.ui-radio-state-checked-hover {
+	background-position: 0 -200px;
+}
+
+
+
+
+form {
+	overflow: hidden;
+	height: 1%;
+	margin: 20px 0;
+}
+
+fieldset {
+	padding: 10px;
+	color: #fff;
+	background: #0F1316;
+}
+
+.ui-helper-hidden-accessible {
+	position: absolute;
+	left: -999em;
+}
+table {
+	margin: 10px 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+caption {
+	text-align: left;
+}
+th,
+td {
+	border: 1px solid #000;
+}
